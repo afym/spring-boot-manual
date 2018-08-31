@@ -1,0 +1,8 @@
+myProperties:
+  message2: "Hi there spring boot lover from yml"
+  override: "Hi I'm in YAML file"
+application:
+  development:
+    urlUser: "https://dev.api.com/user"
+  production:
+    urlUser: "https://api.com/user"
