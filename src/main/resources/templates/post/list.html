@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymleaf.org">
+<head>
+    <title th:text="${pageTitle}">Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="webjars/bootstrap/4.1.3/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}">
+    <script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <article th:each="post : ${posts}">
+        <h2 th:text="${post.title}">Basic Card</h2>
+        <div class="card">
+            <div class="card-body" th:utext="${post.body}">Basic card</div>
+            <span th:utext="${post.date}"></span>
+        </div>
+    </article>
+</div>
+
+</body>
+</html>

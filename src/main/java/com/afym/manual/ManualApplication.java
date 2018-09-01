@@ -1,12 +1,12 @@
 package com.afym.manual;
 
-
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.HttpStatus;
 //import org.springframework.context.annotation.ComponentScan;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -18,7 +18,7 @@ import static java.util.Arrays.*;
 //@EnableAutoConfiguration :
 //@ComponentScan : Scan components or services in this package
 @SpringBootApplication
-@ComponentScan({"com.afym.manual.controller", "com.afym.manual.doc02"})
+@ComponentScan({"com.afym.manual.controller", "com.afym.manual.doc02", "com.afym.manual.doc03", "com.afym.manual.doc04"})
 public class ManualApplication {
 
     public static void main(String[] args) {
